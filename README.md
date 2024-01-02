@@ -16,7 +16,101 @@ management system of YARN and Mesos. FusionInsight integrates Spark on YARN. Oth
 ![image](https://github.com/SDAllouche/spark-rdd/assets/102489525/b738b03e-a74d-4697-90f9-49730a8704c1)
 
 ## Objective
+- Create a Spark application that achieves this lineage.
+![image](https://github.com/SDAllouche/spark-rdd/assets/102489525/4933e040-52f8-482b-8304-eb4989abec3c)
 
+- Develop a Spark application allowing, from a text file (ventes.txt) as input, containing the sales of a company in different cities, to determine the total sales by city. The structure of the file is of the following form: date city product price. Then, create a second application to calculate the total price of product sales by city for a given year.
 
 ## Application
+1. Lineage
+<table >
+    <thead>
+        <tr>
+            <th>RDD 1</th>
+            <th>RDD 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/1.png"></td>
+            <td><img src="screenshots/2.png"></td>
+        </tr>
+    </tbody>
+   <thead>
+        <tr>
+            <th>RDD 3</th>
+            <th>RDD 4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/3.png"></td>
+            <td><img src="screenshots/4.png"></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>RDD 5</th>
+            <th>RDD 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/5.png"></td>
+            <td><img src="screenshots/6.png"></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>RDD 7</th>
+            <th>Pair RDD 7</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/7.png"></td>
+            <td><img src="screenshots/8.png"></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>RDD 8</th>
+            <th>Pair RDD 8</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/9.png"></td>
+            <td><img src="screenshots/10.png"></td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>RDD 9</th>
+            <th>Sorted RDD 9</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/11.png"></td>
+            <td><img src="screenshots/12.png"></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
 
+2. Sales
+<table >
+    <thead>
+        <tr>
+            <th>Total Sales By city</th>
+            <th>Total Sales By city & Products</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="screenshots/13.png"></td>
+            <td><img src="screenshots/14.png"></td>
+        </tr>
+    </tbody>
+</table>
